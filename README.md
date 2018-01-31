@@ -1,2 +1,2 @@
 # williamfralves.github.io
-Criando projeto para exibir apresentações
+Projeto para exibir apresentações de meus workshops
