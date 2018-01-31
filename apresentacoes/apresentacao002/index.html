@@ -89,11 +89,10 @@
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
+		<script src="plugin/menu/menu.js"></script>
 
 		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
+
 			Reveal.initialize({
 
 				controls: true,
@@ -101,6 +100,7 @@
 				history: true,
 				center: true,
 				slideNumber: true,
+
 				transition: 'slide', // none/fade/slide/convex/concave/zoom
 
 				menu: {
@@ -108,24 +108,23 @@
 					numbers: true,
 					openSlideNumber: true,
 					themes: [
-						{ name: 'Black', theme: 'lib/reveal.js/css/theme/black.css' },
-						{ name: 'White', theme: 'lib/reveal.js/css/theme/white.css' },
-						{ name: 'League', theme: 'lib/reveal.js/css/theme/league.css' },
-						{ name: 'Sky', theme: 'lib/reveal.js/css/theme/sky.css' },
-						{ name: 'Beige', theme: 'lib/reveal.js/css/theme/beige.css' },
-						{ name: 'Simple', theme: 'lib/reveal.js/css/theme/simple.css' },
-						{ name: 'Serif', theme: 'lib/reveal.js/css/theme/serif.css' },
-						{ name: 'Blood', theme: 'lib/reveal.js/css/theme/blood.css' },
-						{ name: 'Night', theme: 'lib/reveal.js/css/theme/night.css' },
-						{ name: 'Moon', theme: 'lib/reveal.js/css/theme/moon.css' },
-						{ name: 'Solarized', theme: 'lib/reveal.js/css/theme/solarized.css' }
+						{ name: 'Black', theme: 'css/theme/black.css' },
+						{ name: 'White', theme: 'css/theme/white.css' },
+						{ name: 'League', theme: 'css/theme/league.css' },
+						{ name: 'Sky', theme: 'css/theme/sky.css' },
+						{ name: 'Beige', theme: 'css/theme/beige.css' },
+						{ name: 'Simple', theme: 'css/theme/simple.css' },
+						{ name: 'Serif', theme: 'css/theme/serif.css' },
+						{ name: 'Blood', theme: 'css/theme/blood.css' },
+						{ name: 'Night', theme: 'css/theme/night.css' },
+						{ name: 'Moon', theme: 'css/theme/moon.css' },
+						{ name: 'Solarized', theme: 'css/theme/solarized.css' }
 			        ],
 			        custom: [
 			            { title: 'Custom', icon: '<i class="fa fa-bookmark">', src: 'links.html' },
 			        ]
 				},
-
-
+				// Optional reveal.js plugins
 				dependencies: [
 					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
 					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
@@ -133,7 +132,7 @@
 					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
 					{ src: 'plugin/zoom-js/zoom.js', async: true },
 					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/menu/menu.js' , async: true }
+					{ src: 'plugin/menu/menu.js', async: true }
 				]
 			});
 		</script>
